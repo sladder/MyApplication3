@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/frag_carrito" >
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="5dp">
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/nombre_layout"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/et_nombre"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="16dp"
+                android:hint="Nombre de Carrito de Compras" />
+        </android.support.design.widget.TextInputLayout>
+
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="Guardar"
+            android:id="@+id/bt_guardar2"
+            android:textColor="@android:color/white"
+            android:layout_gravity="center_vertical|right"
+            android:backgroundTint="@color/colorAccent"
+            android:clickable="true"
+            android:layout_marginLeft="10dp" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="CANCELAR"
+                android:id="@+id/bt_cancelar2"
+                android:layout_gravity="center_vertical|right"
+                android:textColor="@android:color/white"
+                android:backgroundTint="@color/colorAccent"
+                android:clickable="true"/>
+        </FrameLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="Seleccione un producto"
+                android:id="@+id/tv_cantidad"
+                android:layout_gravity="center_vertical"
+                android:textColor="@color/colorAccent"
+                android:textStyle="bold"
+                android:layout_marginTop="5dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_precio_cantidad"
+                android:text="Precio: S/. 0.00"
+                android:layout_gravity="center_vertical"
+                android:textColor="@color/colorAccent"
+                android:textStyle="bold"
+                android:layout_marginTop="5dp" />
+        </LinearLayout>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Agregar"
+            android:id="@+id/bt_agregar2"
+            android:textColor="@android:color/white"
+            android:layout_gravity="center_vertical"
+            android:backgroundTint="@color/colorAccent"
+            android:clickable="false"
+            android:layout_marginLeft="25dp" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Quitar"
+                android:id="@+id/bt_quitar2"
+                android:textColor="@android:color/white"
+                android:backgroundTint="@color/colorAccent"
+                android:clickable="false"
+                android:layout_gravity="right" />
+        </FrameLayout>
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="350dp">
+
+        <ListView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/listView2"
+            android:choiceMode="singleChoice" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/framelayout1">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Precio Total: S/. 0.00"
+            android:id="@+id/tv_precio_total"
+            android:layout_gravity="center_vertical|right"
+            android:layout_marginRight="10dp"
+            android:textColor="@color/colorAccent"
+            android:textStyle="bold"
+            android:textSize="20dp" />
+    </FrameLayout>
+
+</LinearLayout>

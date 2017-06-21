@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:descendantFocusability="blocksDescendants">
+
+    <!--  listrow  -->
+    <LinearLayout android:id="@+id/thumbnail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="3dip"
+        android:layout_alignParentLeft="false"
+
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/list_row_image"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@mipmap/ic_lanzador"
+                android:adjustViewBounds="false"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="50dp" />
+
+            <TextView
+                android:id="@+id/list_row_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="NO HAY NINGUN PRODUCTO GUARDADO"
+                android:textColor="#040404"
+                android:typeface="sans"
+                android:textSize="18dp"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/thumbnail"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="15dp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <!-- titulo de la categoria -->
+
+</RelativeLayout>

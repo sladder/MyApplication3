@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Sistema de Ventas</string>
+    <string name="configuracion">Configuración</string>
+    <string name="salir">Salir</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="drawer_open">Se abrio el menu lateral</string>
+    <string name="drawer_close">Se cerro el menu lateral</string>
+
+    <!-- Nombres de los items -->
+    <string-array name="nav_drawer_items">
+        <item >INICIO</item>
+        <item >Busqueda de Productos</item>
+        <item >Mi Carrito</item>
+        <item >Historial</item>
+        <item >Grafico</item>
+    </string-array>
+
+    <!-- Iconos de los items -->
+    <array name="nav_drawer_icons">
+        <item>@drawable/ic_whats_hot</item>
+        <item>@drawable/ic_people</item>
+        <item>@drawable/ic_carrito_blanco</item>
+        <item>@drawable/ic_communities</item>
+        <item>@drawable/ic_carrito_blanco</item>
+    </array>
+
+    <!-- Content Description -->
+    <string name="desc_list_item_icon">Item Icon</string>
+
+    <string name="text_dismiss">Descartar</string>
+
+<!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_mi_carrito_sl">Detalle de Carrito</string>
+    <string name="action_settings">Settings</string>
+
+</resources>

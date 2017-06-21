@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:descendantFocusability="blocksDescendants"
+    android:background="@drawable/list_selector_2"
+    android:focusable="false"
+    android:focusableInTouchMode="false">
+
+    <!--  listrow  -->
+    <LinearLayout android:id="@+id/thumbnail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="3dip"
+        android:layout_alignParentLeft="false"
+
+        android:orientation="horizontal"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:background="#78c9cfcf"
+        android:layout_margin="5dp">
+
+        <TextView
+            android:id="@+id/list_row_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1."
+            android:textColor="#040404"
+            android:typeface="sans"
+            android:textSize="18dp"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/thumbnail"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="5dp"
+            android:focusable="false"
+            android:focusableInTouchMode="false"/>
+
+        <ImageView
+            android:id="@+id/list_row_image"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@mipmap/ic_lanzador"
+            android:adjustViewBounds="false"
+            android:layout_marginRight="10dp"
+            android:focusable="false"
+            android:focusableInTouchMode="false"/>
+
+        <TextView
+            android:id="@+id/list_row_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="title"
+            android:textColor="#040404"
+            android:typeface="sans"
+            android:textSize="18dp"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/thumbnail"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="5dp"
+            android:focusable="false"
+            android:focusableInTouchMode="false"/>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:focusable="false"
+            android:focusableInTouchMode="false">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="S/. 14.50"
+                android:id="@+id/tv_precio"
+                android:layout_gravity="center_vertical|right"
+                android:layout_marginRight="5dp"
+                android:focusable="false"
+                android:focusableInTouchMode="false"/>
+        </FrameLayout>
+
+    </LinearLayout>
+
+    <!-- titulo de la categoria -->
+
+</RelativeLayout>
