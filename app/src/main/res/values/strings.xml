@@ -10,11 +10,11 @@
 
     <!-- Nombres de los items -->
     <string-array name="nav_drawer_items">
-        <item >INICIO</item>
-        <item >Busqueda de Productos</item>
-        <item >Mi Carrito</item>
-        <item >Historial</item>
-        <item >Grafico</item>
+        <item>INICIO</item>
+        <item>Busqueda de Productos</item>
+        <item>Mi Carrito</item>
+        <item>Historial</item>
+        <item>Grafico</item>
     </string-array>
 
     <!-- Iconos de los items -->
@@ -31,7 +31,7 @@
 
     <string name="text_dismiss">Descartar</string>
 
-<!-- TODO: Remove or change this placeholder text -->
+    <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="title_activity_mi_carrito_sl">Detalle de Carrito</string>
     <string name="action_settings">Settings</string>
